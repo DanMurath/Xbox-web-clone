@@ -1,0 +1,32 @@
+.fourteen {
+  background-color: #201f24;
+  h3 {
+    color: #fff;
+    font-size: 28px;
+    padding: 3rem 0;
+  }
+  h6,
+  p {
+    color: #fff;
+    padding: 1rem 0;
+  }
+  p {
+    font-size: 18px;
+  }
+  .collapsible {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: none;
+    padding-bottom: 3rem;
+    margin: 0;
+  }
+  .collapsible-header,
+  .collapsible-body {
+    background-color: #1f1f22;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .divider {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}

@@ -1,0 +1,34 @@
+.thirteen {
+  h2,
+  p {
+    color: #fff;
+  }
+  h2 {
+    font-size: 33px;
+    padding-top: 7rem;
+  }
+  position: relative;
+  transform: translateY(-8rem);
+  .container {
+    background-color: #000;
+  }
+  .tOne {
+    padding-bottom: 2rem;
+    padding-top: 4rem;
+  }
+  .tDimensions {
+    padding: 3rem;
+  }
+}
+
+@media (min-width: 993px) {
+  .thirteen {
+    h2 {
+      font-size: 4rem;
+    }
+    .tDimensions {
+      display: inline-block;
+      width: 33%;
+    }
+  }
+}

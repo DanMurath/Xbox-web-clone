@@ -1,0 +1,37 @@
+.ten {
+  background-color: #fff;
+  margin-bottom: 10rem;
+  h6 {
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 19px;
+  }
+  p {
+    color: #fff;
+    padding: 5px 15px;
+    padding-bottom: 3rem;
+    font-size: 16px;
+  }
+  video {
+    width: 100%;
+  }
+  img {
+    width: 100%;
+  }
+  .dimensions {
+    background-color: #151515;
+    border: 2px solid #353535;
+    margin: 10px 0;
+  }
+}
+@media (min-width: 993px) {
+  .ten {
+    .largeAdjust {
+      width: 49%;
+      display: inline-block;
+    }
+    .tenLast {
+      margin-left: 1%;
+    }
+  }
+}

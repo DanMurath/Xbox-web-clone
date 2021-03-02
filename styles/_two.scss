@@ -1,0 +1,153 @@
+.two {
+  height: 2000px;
+
+  img {
+    border: 1px solid #707070;
+  }
+  .cheif {
+    width: 100%;
+    position: relative;
+    z-index: -2;
+    border: none;
+  }
+
+  .head {
+    color: #fff;
+
+    h1 {
+      font-size: 40px;
+      margin-top: -43px;
+    }
+
+    span {
+      color: #9bf00b;
+    }
+  }
+
+  .board {
+    margin-top: -40px;
+    content: '';
+    position: absolute;
+    height: 1500px;
+    right: 50%;
+    transform: translateX(50%);
+    border: 2px solid #707070;
+    background: #25373b;
+    opacity: .7;
+    width: 90%;
+    z-index: -1;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 1) 100%);
+  }
+
+  .sizing {
+    margin: 0 20px;
+  }
+
+  h2 {
+    color: #fff;
+    font-size: 26px;
+    font-weight: bolder;
+  }
+  p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: lighter;
+  }
+}
+
+//iPads/tablets adjustments
+@media (min-width: 453px) {
+  .two {
+    height: 2400px;
+
+    .board {
+      width: 67%;
+    }
+  }
+}
+@media (min-width: 570px) {
+  .two {
+    height: 2600px;
+  }
+}
+@media (min-width: 690px) {
+  .two {
+    height: 2800px;
+  }
+}
+@media (min-width: 768px) {
+  .two {
+    height: 3000px;
+  }
+}
+
+// Large screens
+@media (min-width: 993px) {
+ 
+  .two {
+    height: 2000px;
+    .cheif {
+      position: sticky;
+      top: 0;
+    }
+
+    .head {
+      h1 {
+        font-size: 45px;
+        margin-top: -310px;
+      }
+    }
+
+    .board {
+      width: 48%;
+      height: 1400px;
+    }
+
+    .sizing {
+      margin: 0 0;
+
+      .row {
+        margin: 140px -30px;
+      }
+    }
+}
+}
+
+@media (min-width: 1300px) {
+
+  .two {
+    height: 2300px;
+    .head {
+      h1 {
+        font-size: 50px;
+        margin-top: -400px;
+      }
+    }
+  }
+}
+@media (min-width: 1560px) {
+
+  .two {
+    height: 2600px;
+
+    .head {
+      h1 {
+        font-size: 50px;
+        margin-top: -470px;
+      }
+    }
+  }
+}
+@media (min-width: 1800px) {
+
+  .two {
+    height: 3000px;
+
+    .head {
+      h1 {
+        font-size: 50px;
+        margin-top: -570px;
+      }
+    }
+  }
+}

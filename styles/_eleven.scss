@@ -1,0 +1,59 @@
+.eleven {
+  margin-bottom: 8rem;
+  .elevenDrop {
+    p {
+      font-size: 14px;
+      padding: 4px 0;
+      span {
+        font-size: 16px;
+      }
+    }
+    .divider {
+      margin: 3rem 0;
+    }
+  }
+  .elevenTwo {
+    margin-bottom: 6rem;
+    .twoImg {
+      width: 100%;
+      position: relative;
+      transform: translateY(5rem);
+    }
+    .elevenTxt {
+      background-color: #505050;
+      color: #fff;
+      padding: 8rem 0;
+      .txtImg {
+        width: 80%;
+        padding-bottom: 2rem;
+      }
+      h4 {
+        font-size: 26px;
+      }
+      p {
+        font-size: 23px;
+        line-height: 1.5;
+        padding-bottom: 2rem;
+        span {
+          color: #9bf00f;
+        }
+      }
+      a {
+        color: #fff;
+        &:hover {
+          color: #9bf00f;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1349px) {
+  .eleven {
+    .elevenTwo {
+      .twoImg {
+        transform: translateY(7rem);
+      }
+    }
+  }
+}

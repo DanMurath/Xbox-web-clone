@@ -1,0 +1,59 @@
+nav {
+  h1 {
+    margin: 11px 0;
+  }
+  .background {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0) 25%,
+        rgba(0, 0, 0, 1) 100%
+      ),
+      url(/img/7bckgrnd.jpg);
+  }
+  .side-nav {
+    .user-view {
+      .circle {
+        width: 34px;
+      }
+    }
+  }
+  .svgImg {
+    filter: invert(100%) sepia(81%) saturate(0%) hue-rotate(133deg)
+      brightness(107%) contrast(95%); //creates a white colour
+    opacity: 0.7;
+    &:hover {
+      opacity: 1;
+    }
+    &:active {
+      opacity: 1;
+    }
+  }
+  .sideNavCont {
+    height: 90%;
+  }
+  .divider {
+    position: relative;
+    transform: rotate(90deg);
+    width: 26rem;
+    bottom: -24rem;
+    left: -167px;
+    opacity: 0.7;
+    border-radius: 3px;
+    height: 3px;
+  }
+}
+@media (max-height: 737px) {
+  nav {
+    .divider {
+      bottom: -19rem;
+    }
+  }
+}
+@media (min-width: 993px) {
+  nav {
+    .desktopNav {
+      padding-right: 10%;
+    }
+  }
+}

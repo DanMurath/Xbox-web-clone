@@ -1,0 +1,95 @@
+.three {
+  min-height: 1800px;
+
+  video {
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+  }
+
+  .hrdInf {
+    color: #fff;
+    padding-top: 46rem;
+    h2 {
+      font-size: 47px;
+      
+      span {
+       color:  #9bf00b;
+    }
+  }
+    p {
+      font-size: 17px;
+    }
+  }
+
+  img {
+    width: 100%;
+    padding-top: 21rem;
+  }
+  .threeDescrip {
+    color: #fff;
+    padding: 0 20px;
+
+    h2 {
+      font-size: 24px;
+    }
+  }
+}
+@media (min-width: 993px) {
+  .three {
+    min-height: 1400px;
+
+    .hrdInf {
+      padding-top: 15rem;
+      padding-left: 28rem;
+    }
+    img {
+      padding-top: 17rem;
+    }
+    .threeDescrip {
+      position: absolute;
+      margin-top: -24rem;
+      padding-right: 67%;
+      margin-left: 90px;
+    }
+  }
+}
+@media (min-width: 1203px) {
+  .three {
+    min-height: 1800px;
+    .hrdInf {
+      padding-top: 18rem;
+      padding-left: 33rem;
+    }
+  }
+}
+@media (min-width: 1367px) {
+  .three {
+    .hrdInf {
+      padding-top: 25rem;
+      padding-left: 41rem;
+    }
+  }
+}
+@media (min-width: 1648px) {
+  .three {
+    min-height: 2150px;
+    .hrdInf {
+      padding-top: 29rem;
+      padding-left: 53rem;
+    }
+    .threeDescrip {
+      position: absolute;
+      margin-top: -24rem;
+      padding-right: 71%;
+      margin-left: 130px;
+
+      h2 {
+        font-size: 34px;
+      }
+      p {
+        font-size: 17px;
+      }
+    }
+  }
+}

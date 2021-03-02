@@ -1,0 +1,61 @@
+.four {
+  height: 50rem;
+  padding-top: 5rem;
+  video {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .fourD {
+    color: #fff;
+    padding-top: 7rem;
+
+    h2 {
+      font-size: 42px;
+
+      span {
+        color: #9bf00b;
+      }
+    }
+
+    p {
+      font-size: 15px;
+    }
+  }
+}
+
+@media (min-width: 880px) {
+  .four {
+    height: 70rem;
+
+    .fourD {
+      padding-top: 16rem;
+      transform: translate3d(0px, 9.28px, 0px);
+      h2 {
+        font-size: 58px;
+      }
+      p {
+        font-size: 22px;
+      }
+    }
+  }
+}
+@media (min-width: 1600px) {
+  .four {
+    height: 82rem;
+
+    .fourD {
+      padding-top: 23rem;
+      margin: 0 18%;
+
+      h2 {
+        font-size: 80px;
+      }
+      p {
+        font-size: 24px;
+      }
+    }
+  }
+}
+

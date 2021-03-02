@@ -1,0 +1,26 @@
+.subNav {
+  background: rgba(0, 0, 0, 0.7);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  .subNavContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  h6 {
+    color: #fff;
+    padding: 20px 0;
+  }
+  button {
+    margin: 16px 0;
+    padding: 5px 23px;
+    color: #9bf00b;
+    border: 1px solid #9bf00b;
+    background-color: transparent;
+    &:hover {
+      text-decoration: underline;
+      transition: all 200ms ease-in-out;
+    }
+  }
+}

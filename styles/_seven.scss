@@ -1,0 +1,148 @@
+.seven {
+  background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url(/img/7bckgrnd.jpg);
+  background-repeat: no-repeat;
+  margin-top: 25rem;
+
+  .svn {
+    top: -10rem;
+    position: relative;
+
+    .svnOne {
+      .velocity {
+        width: 101px;
+      }
+      h2 {
+        color: #fff;
+        font-size: 44px;
+        margin-right: 80px;
+        span {
+          color: #9bf00b;
+        }
+      }
+      p {
+        color: #fff;
+        font-size: 16px;
+        line-height: 28px;
+        margin-right: 5rem;
+      }
+      margin-top: 2rem;
+      video {
+        width: 100%;
+        margin-top: 2rem;
+      }
+    }
+    .svnTwo {
+      h5 {
+        color: #fff;
+        font-size: 20px;
+        margin: 3rem 2rem;
+        margin-top: 6rem;
+        margin-bottom: -2rem;
+      }
+      p {
+        color: #fff;
+        margin: 3rem 2rem;
+        span {
+          color: #9bf00b;
+        }
+      }
+      img {
+        border: 1px solid grey;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 993px) {
+  .seven {
+    background: url(/img/7bckgrnd+.jpg);
+    margin-top: 10rem;
+    .svn {
+      top: 0;
+      padding-top: 4rem;
+
+      .svnOne {
+        display: inline-block;
+        width: 49%;
+        h2 {
+          font-size: 57px;
+        }
+        p {
+          line-height: 32px;
+          font-size: 19px;
+        }
+      }
+      .svnTwo {
+        display: inline-block;
+        width: 44%;
+        margin-left: 3rem;
+        h5 {
+          font-size: 24px;
+          text-shadow: 0px 0px calc(0.08em + 13px) #000;
+        }
+        p {
+          font-size: 17px;
+          text-shadow: 0px 0px calc(0.08em + 13px) #000;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1550px) {
+  .seven {
+    .svn {
+      padding-top: 13rem;
+      .svnOne {
+        video {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-width: 457px;
+          left: 50%;
+          padding-bottom: 20rem;
+        }
+        .svnOne-txt {
+          position: absolute;
+          width: 600px;
+          z-index: 1;
+          margin-top: -4rem;
+          .velocity {
+            width: 140px;
+          }
+          h2 {
+            font-size: 5rem;
+            text-shadow: 0px 0px calc(0.08em + 13px) #000;
+          }
+          p {
+            width: 240px;
+            font-size: 17px;
+            line-height: 25px;
+          }
+        }
+      }
+      .svnTwo {
+        position: absolute;
+        width: 330px;
+        transform: translateX(64%);
+        margin-top: 3rem;
+        h5 {
+          margin: 3rem 3rem;
+          margin-bottom: -2rem;
+          font-size: 20px;
+        }
+        p {
+          margin: 3rem 3rem;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
