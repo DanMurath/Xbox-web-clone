@@ -4,6 +4,21 @@
 //                                                                             *
 //*****************************************************************************
 
+//*********** sub nav effect ***********
+
+const sticky = () => {
+  const stickyEl = document.querySelector(".subNav");
+
+  const observer = new IntersectionObserver(
+    ([e]) => e.target.classList.toggle("isSticky", e.intersectionRatio < 1),
+    { threshold: [1] }
+  );
+
+  observer.observe(stickyEl);
+};
+
+sticky();
+
 //*********** carousel for six-large ****************
 //could create a loop function?? incase of repeats
 
@@ -88,6 +103,22 @@ const purchaseCarsl = () => {
 };
 
 purchaseCarsl();
+
+//******** faq chevron/arrow toggle *******
+/*
+const faq = () => {
+  const arrow = document.querySelectorAll(".fa-chevron-right");
+  const header = document.querySelector(".fas");
+
+  header.addEventListener("click", () => {
+    if (arrow.classList.contains("fas fa-chevron-right")) {
+      arrow.classList.toggle("fas fa-chevron-down");
+    }
+    console.log("working");
+  });
+};
+
+faq();*/
 
 //******** audio easter eggs **********
 

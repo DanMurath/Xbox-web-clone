@@ -37,10 +37,6 @@
   margin: auto;
   width: 60%;
   position: relative;
-  &:hover {
-    width: 61%;
-    transition: all 0.3s ease-in-out;
-  }
   .cont-slide {
     img {
       border: 1px solid #707070;
@@ -64,6 +60,7 @@
       font-weight: bold;
       height: 40px;
       width: 40px;
+      background: #1f1f22;
       margin: 0 20px;
       opacity: 0.5;
       &:hover {

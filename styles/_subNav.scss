@@ -1,7 +1,7 @@
 .subNav {
-  background: rgba(0, 0, 0, 0.7);
+  background: #1f1f22;
   position: sticky;
-  top: 0;
+  top: -1px;
   z-index: 10;
   .subNavContent {
     display: flex;
@@ -11,6 +11,8 @@
   h6 {
     color: #fff;
     padding: 20px 0;
+    position: relative;
+    transform: translateX(-2rem);
   }
   button {
     margin: 16px 0;
@@ -18,9 +20,26 @@
     color: #9bf00b;
     border: 1px solid #9bf00b;
     background-color: transparent;
+    transform: translateX(2rem);
+    i {
+      padding-left: 6px;
+      font-size: 13px;
+      padding-bottom: 4px;
+      position: relative;
+      transform: translateY(-1px);
+    }
     &:hover {
       text-decoration: underline;
       transition: all 200ms ease-in-out;
     }
+  }
+}
+.isSticky {
+  background: rgba(0, 0, 0, 0.7);
+  h6 {
+    transform: translateX(0);
+  }
+  button {
+    transform: translateX(0);
   }
 }

@@ -1,7 +1,7 @@
 .main-title {
   background: #1f1f22;
   min-height: 200px;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 
   h1 {
     color: #fff;
@@ -15,7 +15,7 @@
 
     .sm {
       font-size: 19px;
-    }    
+    }
   }
 }
 
@@ -28,15 +28,29 @@
 
 @media (min-width: 993px) {
   .intro {
-  .main-title {
-    position: absolute;
-    background: none;
-    width: 300px;
-    top: 110px;
-    left: 170px;
-  }
-  h1 {
-    width: 300px;
+    .main-title {
+      position: absolute;
+      background: none;
+      width: 300px;
+      top: 160px;
+      left: 140px;
+    }
+    h1 {
+      width: 300px;
+      font-size: 62px;
+    }
   }
 }
+@media (min-width: 1500px) {
+  .intro {
+    .main-title {
+      width: 400px;
+      top: 200px;
+      left: 290px;
+    }
+    h1 {
+      width: 400px;
+      font-size: 73px;
+    }
+  }
 }
