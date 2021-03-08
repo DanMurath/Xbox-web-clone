@@ -27,6 +27,17 @@ nav {
       url(/img/7bckgrnd.jpg);
   }
   .side-nav {
+    li {
+      cursor: pointer;
+      i {
+        color: #fff;
+        font-size: 20px;
+      }
+      .user {
+        position: relative;
+        transform: translateX(3px);
+      }
+    }
     .user-view {
       .circle {
         width: 34px;

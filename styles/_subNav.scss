@@ -8,19 +8,59 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  h6 {
+  .leftNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  h6,
+  a {
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 8px;
     position: relative;
-    transform: translateX(-2rem);
+    transform: translateX(-20px);
+  }
+  h6 {
+    font-size: 14px;
+    width: 150px;
+  }
+  a {
+    font-size: 14px;
+    margin: 9.5px 0 4px;
+    padding: 0 19px;
+    &:hover {
+      color: #9bf00b;
+    }
+  }
+  .overview {
+    padding-left: 2.8rem;
+  }
+  .largeList {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: -9rem;
+    //   align-items: center;
+  }
+  .rightNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    transform: translateX(10px);
+    p {
+      font-size: 15px;
+      color: #707070;
+      padding-right: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
   }
   button {
-    margin: 16px 0;
-    padding: 5px 23px;
+    margin: 14px 0;
+    padding: 3.5px 13px;
     color: #9bf00b;
+    font-size: 13px;
     border: 1px solid #9bf00b;
     background-color: transparent;
-    transform: translateX(2rem);
     i {
       padding-left: 6px;
       font-size: 13px;
@@ -37,9 +77,45 @@
 .isSticky {
   background: rgba(0, 0, 0, 0.7);
   h6 {
+    transform: translateX(-15px);
+  }
+  .rightNav {
     transform: translateX(0);
   }
-  button {
-    transform: translateX(0);
+}
+@media (min-width: 993px) {
+  .subNav {
+    h6 {
+      transform: translateX(-9.5rem);
+      font-size: 17px;
+    }
+    .rightNav {
+      transform: translateX(12rem);
+      button {
+        padding: 3.5px 18px;
+        font-size: 15px;
+      }
+    }
+  }
+  .isSticky {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+@media (max-width: 734px) {
+  .subNav {
+    .subNavContent {
+      p {
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 1466px) {
+  .subNav {
+    .subNavContent {
+      .largeList {
+        display: none;
+      }
+    }
   }
 }

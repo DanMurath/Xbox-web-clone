@@ -13,6 +13,17 @@ nav ul li a i:hover {
 nav .background {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, black 100%), url(/img/7bckgrnd.jpg);
 }
+nav .side-nav li {
+  cursor: pointer;
+}
+nav .side-nav li i {
+  color: #fff;
+  font-size: 20px;
+}
+nav .side-nav li .user {
+  position: relative;
+  transform: translateX(3px);
+}
 nav .side-nav .user-view .circle {
   width: 34px;
 }
@@ -61,19 +72,58 @@ nav .divider {
   flex-direction: row;
   justify-content: space-between;
 }
-.subNav h6 {
+.subNav .leftNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.subNav h6,
+.subNav a {
   color: #fff;
-  padding: 20px 0;
+  padding: 10px 8px;
   position: relative;
-  transform: translateX(-2rem);
+  transform: translateX(-20px);
+}
+.subNav h6 {
+  font-size: 14px;
+  width: 150px;
+}
+.subNav a {
+  font-size: 14px;
+  margin: 9.5px 0 4px;
+  padding: 0 19px;
+}
+.subNav a:hover {
+  color: #9bf00b;
+}
+.subNav .overview {
+  padding-left: 2.8rem;
+}
+.subNav .largeList {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  left: -9rem;
+}
+.subNav .rightNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transform: translateX(10px);
+}
+.subNav .rightNav p {
+  font-size: 15px;
+  color: #707070;
+  padding-right: 10px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .subNav button {
-  margin: 16px 0;
-  padding: 5px 23px;
+  margin: 14px 0;
+  padding: 3.5px 13px;
   color: #9bf00b;
+  font-size: 13px;
   border: 1px solid #9bf00b;
   background-color: transparent;
-  transform: translateX(2rem);
 }
 .subNav button i {
   padding-left: 6px;
@@ -91,12 +141,39 @@ nav .divider {
   background: rgba(0, 0, 0, 0.7);
 }
 .isSticky h6 {
-  transform: translateX(0);
+  transform: translateX(-15px);
 }
-.isSticky button {
+.isSticky .rightNav {
   transform: translateX(0);
 }
 
+@media (min-width: 993px) {
+  .subNav h6 {
+    transform: translateX(-9.5rem);
+    font-size: 17px;
+  }
+  .subNav .rightNav {
+    transform: translateX(12rem);
+  }
+  .subNav .rightNav button {
+    padding: 3.5px 18px;
+    font-size: 15px;
+  }
+
+  .isSticky {
+    background: rgba(0, 0, 0, 0.7);
+  }
+}
+@media (max-width: 734px) {
+  .subNav .subNavContent p {
+    display: none;
+  }
+}
+@media (max-width: 1466px) {
+  .subNav .subNavContent .largeList {
+    display: none;
+  }
+}
 .main-title {
   background: #1f1f22;
   min-height: 200px;
@@ -816,7 +893,7 @@ nav .divider {
   background-color: #fff;
 }
 .nine .videoFade {
-  height: 5rem;
+  height: 10rem;
   position: absolute;
   z-index: 1;
   width: 100%;

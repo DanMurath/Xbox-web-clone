@@ -50,16 +50,16 @@
              <div class="container sideNavCont">
             <li>
               <a href="#!" class="white-text">
-                Home
+                Cart
+                <i class="fas fa-shopping-cart"></i>
               </a>
             </li>
             <li>
-              <a href="#!" class="white-text">
+              <a class="subheader white-text" href="#!">
                 Account
+              <i class="fas fa-user-circle user"></i>
               </a>
             </li>
-            <li><a class="subheader white-text" href="#!">Cart</a></li>
-            <li><a class="waves-effect white-text" href="#!">Third Link With Waves</a></li>
             <div class="divider"></div>
             </ul>
         </div>
@@ -78,9 +78,23 @@
     <div class="subNav">
       <div class="container">
         <div class="subNavContent center-align">
-        <h6 class="subEdits">Xbox Series X</h6>
+        <div class="leftNav">
+        <h6 class="lrg-screen">Xbox Series X</h6>
+        <div class="largeList hide-on-med-and-down">
+        <a href="#one" class="subEdits overview">OVERVIEW</a>
+        <a href="#five" class="subEdits">GAMES</a>
+        <a href="#ten" class="subEdits">SPECS</a>
+        <a href="#twelve" class="subEdits">GALLARY</a>
+        <a href="#thirteen" class="subEdits">UNBOX</a>
+        </div>
+        </div>
+        <div class="rightNav">
+        <div class="price">
+          <p><em>Starting at £28.99/mo.</em></p>
+        </div>
         <button class="subEdits">CHECK AVAILABILITY <i class="fas fa-chevron-right"></i></button>
-      </div>
+        </div>
+        </div>
       </div>
     </div>
 
@@ -112,7 +126,7 @@
       ></video>
     </div>
 
-    <div class="one parallax-container">
+    <div class="one parallax-container scrollspy" id="one">
       <div class="parallax">
         <img class="hide-on-large-only" src="img/1.jpg" alt="" />
         <div class="parallax">
@@ -317,7 +331,7 @@
       </div>
     </div>
 
-    <div class="five">
+    <div class="five scrollspy" id="five">
           <div class="fiveDescrip">
               <div class="container">
               <h2 class="center-align">TRUE 4K GAMING</h2>
@@ -477,7 +491,7 @@
       </div>
     </div>
 
-    <div class="ten">
+    <div class="ten scrollspy" id="ten">
       <div class="container">
           <div class="tenFirst largeAdjust">
             <div class="tenOne dimensions">
@@ -590,7 +604,7 @@
 
     <div class="drkGrey"> <!-- same as whitebackgrnd, to fix margin issues -->
 
-    <div class="twelve">
+    <div class="twelve scrollspy" id="twelve">
       <div class="container">
         <img src="img/xboxlogo.svg" class="svgImg2" alt="">
       <div class="imgShowcase">
@@ -652,7 +666,7 @@
     <div class="drkGreyPadding"></div> <!-- apply extra padding to bottom-->
     </div> <!-- drkGrey div -->
 
-    <div class="thirteen">
+    <div class="thirteen scrollspy" id="thirteen">
       <div class="container">
       <h2 class="center-align">WHAT'S IN THE BOX</h2>
       <div class="thirteenImgs center-align">
@@ -729,6 +743,7 @@
           indicators: true,
         });
         $('.collapsible').collapsible();
+        $('.scrollspy').scrollsy();
       });
     </script>
   </body>
